@@ -1,0 +1,27 @@
+{
+  "groups":[
+    {
+      "name":"Main Deck",
+      "type":"deck",
+      "objects":{
+        "allowed":["card"],
+        "default":[
+          "aceClubs","kingClubs","queenClubs"
+        ]
+      }
+    }
+  ],
+  "objects":[
+    {
+      "name":"aceClubs",
+      "type":"card",
+      "images":{
+        "front":"//https://s-media-cache-ak0.pinimg.com/564x/2c/ca/3c/2cca3cb47237d9214d8d9ab1480d5ce4.jpg",
+        "back":"//https://s-media-cache-ak0.pinimg.com/564x/2c/ca/3c/2cca3cb47237d9214d8d9ab1480d5ce4.jpg"
+      },
+      "sizes":{
+
+      }
+    }
+  ]
+}
