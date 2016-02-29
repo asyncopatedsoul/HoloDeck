@@ -1,0 +1,104 @@
+{
+  "groups":[
+    {
+      "name":"Tile Bank",
+      "type":"pile",
+      "objects":{
+        "allowed":["blackToken"],
+        "default":[
+
+        ]
+      }
+    },
+    {
+      "name":"White",
+      "type":"pile",
+      "objects":{
+        "allowed":["whiteToken"],
+        "default":[
+          { "whiteToken":30 }
+        ]
+      }
+    }
+  ],
+  "locations":[
+    {
+      "name":"nEurope",
+      "data":{
+        "displayName":"Northern Europe",
+        "neighbors":["sEurope","russia","wEurope","grtBritain","scandinavia"]
+      },
+      "position":{
+        "x":0,"y":0
+      },
+      "bounds":{
+        "key":"nEurope"
+      }
+    },
+    {
+      "name":"europe",
+      "children":[
+        "sEurope","russia","wEurope","grtBritain","scandinavia"
+      ],
+      "neighbors":[],
+      "data":{
+        "territories":7,
+        "value":5
+      }
+    }
+  ],
+  "objects":[
+    {
+      "name":"attackDie",
+      "class":"d6",
+      "model":""
+    },
+    {
+      "name":"defendDie",
+      "class":"d6",
+      "model":""
+    },
+    {
+      "name":"nEurope",
+      "class":"card",
+      "images": {
+        "front":"",
+        "back":"commonBack"
+      },
+      "data":{
+        "displayName":"Northern Europe",
+        "stars":2
+      }
+    },
+    {
+      "name":"ceasefire",
+      "class":"card",
+      "images": {
+        "front":"",
+        "back":"commonBack"
+      },
+      "data":{
+        "displayName":"Cease Fire",
+        "ceasefire":true
+      }
+    },
+    {
+      "name":"unitX1",
+      "class":"figure",
+      "model":""
+    },
+    {
+      "name":"unitX5",
+      "class":"figure",
+      "model":""
+    }
+  ],
+  "images":[
+    { "name":"commonBack",
+      "source":""
+    }
+  ],
+  "sizes":{
+
+  }
+}

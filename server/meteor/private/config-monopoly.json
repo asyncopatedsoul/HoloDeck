@@ -1,7 +1,7 @@
 {
   "groups":[
     {
-      "name":"Black",
+      "name":"Tile Bank",
       "type":"pile",
       "objects":{
         "allowed":["blackToken"],

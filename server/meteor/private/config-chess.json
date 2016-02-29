@@ -1,0 +1,126 @@
+{
+  "groups":[
+    {
+      "name":"Black",
+      "type":"pile",
+      "objects":{
+        "allowed":["blackToken"],
+        "default":[
+          {"knightBlk":2},{"bishopBlk":2},{"rookBlk":2},{"pawnBlk":8},
+          {"kingBlk":1},{"queenBlk":1}
+        ]
+      }
+    },
+    {
+      "name":"White",
+      "type":"pile",
+      "objects":{
+        "allowed":["whiteToken"],
+        "default":[
+          {"knightWht":2},{"bishopWht":2},{"rookWht":2},{"pawnWht":8},
+          {"kingWht":1},{"queenWht":1}
+        ]
+      }
+    },
+    {
+      "name":"WhiteCaptured",
+      "type":"pile",
+      "objects":{
+        "allowed":["blackToken"]
+      }
+    },
+    {
+      "name":"BlackCaptured",
+      "type":"pile",
+      "objects":{
+        "allowed":["whiteToken"]
+      }
+    }
+  ],
+  "objects":[
+    {
+      "name":"knightBlk",
+      "classes":["tokenRound","blackToken"],
+      "images": {
+        "front":""
+      }
+    },
+    {
+      "name":"bishopBlk",
+      "classes":["tokenRound","blackToken"],
+      "images": {
+        "front":""
+      }
+    },
+    {
+      "name":"rookBlk",
+      "classes":["tokenRound","blackToken"],
+      "images": {
+        "front":""
+      }
+    },
+    {
+      "name":"pawnBlk",
+      "classes":["tokenRound","blackToken"],
+      "images": {
+        "front":""
+      }
+    },
+    {
+      "name":"kingBlk",
+      "classes":["tokenRound","blackToken"],
+      "images": {
+        "front":""
+      }
+    },
+    {
+      "name":"queenBlk",
+      "classes":["tokenRound","blackToken"],
+      "images": {
+        "front":""
+      }
+    },
+    {
+      "name":"knightWht",
+      "classes":["tokenRound","whiteToken"],
+      "images": {
+        "front":""
+      }
+    },
+    {
+      "name":"bishopWht",
+      "classes":["tokenRound","whiteToken"],
+      "images": {
+        "front":""
+      }
+    },
+    {
+      "name":"rookWht",
+      "classes":["tokenRound","whiteToken"],
+      "images": {
+        "front":""
+      }
+    },
+    {
+      "name":"pawnWht",
+      "classes":["tokenRound","whiteToken"],
+      "images": {
+        "front":""
+      }
+    },
+    {
+      "name":"kingWht",
+      "classes":["tokenRound","whiteToken"],
+      "images": {
+        "front":""
+      }
+    },
+    {
+      "name":"queenWht",
+      "classes":["tokenRound","whiteToken"],
+      "images": {
+        "front":""
+      }
+    }
+  ]
+}

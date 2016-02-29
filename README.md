@@ -11,6 +11,7 @@ tabletop
     granular multitouch support - HammerJS
     DDP client - https://github.com/hharnisc/node-ddp-client
     animations - https://facebook.github.io/react-native/docs/animations.html#content
+    3D objects - https://github.com/ProjectSeptemberInc/gl-react-native
 
 handheld
   handheld client for iOS/Android
@@ -20,6 +21,7 @@ handheld
     granular multitouch support - HammerJS
     DDP client - https://github.com/hharnisc/node-ddp-client
     animations - https://facebook.github.io/react-native/docs/animations.html#content
+    3D objects - https://github.com/ProjectSeptemberInc/gl-react-native
     filesystem access
       - https://github.com/johanneslumpe/react-native-fs
       - https://github.com/cjdell/react-native-fs-test

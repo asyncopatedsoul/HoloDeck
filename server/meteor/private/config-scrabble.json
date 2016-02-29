@@ -1,0 +1,112 @@
+{
+  "groups":[
+    {
+      "name":"Tile Bank",
+      "type":"pile",
+      "objects":{
+        "allowed":["blackToken"],
+        "default":[
+          { "A":9 },{ "I":9 },{ "E":9 },
+          { "O":8 },
+          { "N":6 },{ "R":6 },{ "T":6 },
+          { "L":4 },{ "S":4 },{ "U":4 }
+        ]
+      }
+    }
+  ],
+  "objects":[
+    {
+      "name":"Blank",
+      "class":"tile",
+    },
+    {
+      "name":"A",
+      "class":"tile",
+      "data": {
+        "displayName":"A",
+        "points":1
+      }
+    },
+    {
+      "name":"E",
+      "class":"tile",
+      "data": {
+        "displayName":"E",
+        "points":1
+      }
+    },
+    {
+      "name":"I",
+      "class":"tile",
+      "data": {
+        "displayName":"I",
+        "points":1
+      }
+    },
+    {
+      "name":"O",
+      "class":"tile",
+      "data": {
+        "displayName":"O",
+        "points":1
+      }
+    },
+    {
+      "name":"E",
+      "class":"tile",
+      "data": {
+        "displayName":"A",
+        "points":1
+      }
+    },
+    {
+      "name":"N",
+      "class":"tile",
+      "data": {
+        "displayName":"N",
+        "points":1
+      }
+    },
+    {
+      "name":"R",
+      "class":"tile",
+      "data": {
+        "displayName":"R",
+        "points":1
+      }
+    },
+    {
+      "name":"T",
+      "class":"tile",
+      "data": {
+        "displayName":"T",
+        "points":1
+      }
+    },
+    {
+      "name":"L",
+      "class":"tile",
+      "data": {
+        "displayName":"L",
+        "points":1
+      }
+    },
+
+    {
+      "name":"S",
+      "class":"tile",
+      "data": {
+        "displayName":"S",
+        "points":1
+      }
+    },
+    {
+      "name":"U",
+      "class":"tile",
+      "data": {
+        "displayName":"U",
+        "points":1
+      }
+    }
+  ]
+}
