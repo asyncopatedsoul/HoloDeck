@@ -122,7 +122,7 @@ var styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: 'row',
-    backgroundColor: 'white',
+    backgroundColor: 'lightgrey',
     padding: 10,
   },
   name: {

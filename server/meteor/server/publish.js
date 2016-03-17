@@ -1,4 +1,4 @@
-Meteor.publish('gameObjects', function(sessionName) {
+Meteor.publish('gameObjects', function() {
 
   //check(sessionName, String);
   //return GameObjects.find({sessionName: sessionName});
