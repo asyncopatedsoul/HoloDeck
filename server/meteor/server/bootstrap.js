@@ -1,17 +1,25 @@
 Meteor.startup(function () {
 
-  if (GameObjects.find().count() === 0) {
+  // Read the gameConfig File
+  const gameConfig = JSON.parse(Assets.getText('config-cards.json'));
 
-    // seed playing cards
-    var seedJson = JSON.parse(Assets.getText("config-cards.json"));
+  // Empty the collections
+  GameObjects.remove({});
+  Groups.remove({});
 
-    _.each(seedJson, function(objectData) {
-      console.log(objectData);
-      GameObjects.insert(objectData);
-    });
+  // Seed the game objects and groups
+  _.each(gameConfig.objects, function (object) {
+    GameObjects.insert(object);
+  });
 
-  } else {
-    console.log("objectData seeded");
-  }
+  _.each(gameConfig.groups, function (group) {
+    Groups.insert(group);
+  });
 
-})
+  // Groups have a default property that defines the object names that should exist initially
+  Groups.populateWithDefaults();
+
+  // Deal an object from the Main Deck to the Shared Cards
+  Groups.dealTopFromToByName('Main Deck', 'Shared Cards');
+
+});

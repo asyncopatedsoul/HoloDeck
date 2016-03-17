@@ -7,7 +7,26 @@
         "allowed":["card"],
         "default":[
           "H-A","H-K","H-10","H-9","H-8","H-7","H-6","H-5","H-4","H-3","H-2"
-        ]
+        ],
+        "current": []
+      }
+    },
+    {
+      "name": "Shared Cards",
+      "type": "cardPile",
+      "objects": {
+        "allowed": ["card"],
+        "default": [],
+        "current": []
+      }
+    },
+    {
+      "name": "Player 1",
+      "type": "hand",
+      "objects": {
+        "allowed": ["card"],
+        "default": [],
+        "current": []
       }
     }
   ],
@@ -15,6 +34,7 @@
     {
       "name":"H-A",
       "class":"card",
+      "showingBack":true,
       "images": {
         "front":"cards-14.png",
         "back":"back.png"
@@ -23,6 +43,7 @@
     {
       "name":"H-K",
       "class":"card",
+      "showingBack":true,
       "images": {
         "front":"cards-26.png",
         "back":"back.png"
@@ -31,6 +52,7 @@
     {
       "name":"H-Q",
       "class":"card",
+      "showingBack":true,
       "images": {
         "front":"cards-25.png",
         "back":"back.png"
@@ -39,6 +61,7 @@
     {
       "name":"H-J",
       "class":"card",
+      "showingBack":true,
       "images": {
         "front":"cards-24.png",
         "back":"back.png"
@@ -47,6 +70,7 @@
     {
       "name":"H-10",
       "class":"card",
+      "showingBack":true,
       "images": {
         "front":"cards-23.png",
         "back":"back.png"
@@ -55,6 +79,7 @@
     {
       "name":"H-9",
       "class":"card",
+      "showingBack":true,
       "images": {
         "front":"cards-22.png",
         "back":"back.png"
@@ -63,6 +88,7 @@
     {
       "name":"H-8",
       "class":"card",
+      "showingBack":true,
       "images": {
         "front":"cards-21.png",
         "back":"back.png"
@@ -71,6 +97,7 @@
     {
       "name":"H-7",
       "class":"card",
+      "showingBack":true,
       "images": {
         "front":"cards-20.png",
         "back":"back.png"
@@ -79,6 +106,7 @@
     {
       "name":"H-6",
       "class":"card",
+      "showingBack":true,
       "images": {
         "front":"cards-19.png",
         "back":"back.png"
@@ -87,6 +115,7 @@
     {
       "name":"H-5",
       "class":"card",
+      "showingBack":true,
       "images": {
         "front":"cards-18.png",
         "back":"back.png"
@@ -95,6 +124,7 @@
     {
       "name":"H-4",
       "class":"card",
+      "showingBack":true,
       "images": {
         "front":"cards-17.png",
         "back":"back.png"
@@ -103,6 +133,7 @@
     {
       "name":"H-3",
       "class":"card",
+      "showingBack":true,
       "images": {
         "front":"cards-16.png",
         "back":"back.png"
@@ -111,6 +142,7 @@
     {
       "name":"H-2",
       "class":"card",
+      "showingBack":true,
       "images": {
         "front":"cards-15.png",
         "back":"back.png"
