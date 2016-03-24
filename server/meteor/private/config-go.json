@@ -1,0 +1,42 @@
+{
+  "groups":[
+    {
+      "name":"Black",
+      "type":"pile",
+      "objects":{
+        "allowed":["blackToken"],
+        "default":[
+          { "blackToken":30 }
+        ]
+      }
+    },
+    {
+      "name":"White",
+      "type":"pile",
+      "objects":{
+        "allowed":["whiteToken"],
+        "default":[
+          { "whiteToken":30 }
+        ]
+      }
+    }
+  ],
+  "objects":[
+    {
+      "name":"blackToken",
+      "class":"tokenRound",
+      "images": {
+        "front":"",
+        "back":""
+      }
+    },
+    {
+      "name":"whiteToken",
+      "class":"tokenRound",
+      "images": {
+        "front":"",
+        "back":""
+      }
+    }
+  ]
+}
