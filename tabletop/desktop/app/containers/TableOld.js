@@ -19,7 +19,7 @@ class Table extends Component {
 
   componentDidMount() {
     const that = this;
-    const ddpClient = new DDPClient({url: 'ws://localhost:4000/websocket'});
+    const ddpClient = new DDPClient({url: 'ws://localhost:6969/websocket'});
     this.ddpClient = ddpClient;
 
     ddpClient.connect((err, wasReconnected) => {
