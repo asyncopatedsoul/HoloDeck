@@ -3,6 +3,7 @@
     {
       "name":"Main Deck",
       "type":"deck",
+      "position": {"x": 100, "y": 100},
       "objects":{
         "allowed":["card"],
         "default":[

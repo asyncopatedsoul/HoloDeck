@@ -12,6 +12,15 @@ module.exports = {
     }, {
       test: /\.json$/,
       loader: 'json-loader'
+    }, {
+      test: /\.scss$/,
+      loaders: ["style", "css", "resolve-url", "sass"]
+    }, {
+      test: /\.png$/,
+      loader: "url-loader?limit=100000"
+    }, {
+      test: /\.jpg$/,
+      loader: "file-loader"
     }]
   },
   output: {

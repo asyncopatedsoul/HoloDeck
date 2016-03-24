@@ -20,6 +20,6 @@ Meteor.startup(function () {
   Groups.populateWithDefaults();
 
   // Deal an object from the Main Deck to the Shared Cards
-  Groups.dealTopFromToByName('Main Deck', 'Shared Cards');
+  Groups.dealTopFromToByName('Main Deck', 'Flop');
 
 });

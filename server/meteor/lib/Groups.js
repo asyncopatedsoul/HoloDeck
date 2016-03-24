@@ -3,6 +3,22 @@
   * this is represented as a stack of object _ids
   * When we deal objects, we are just passing object _ids from group to group
   *
+  * Group Properties:
+  *
+  * name: name of the group (not really used for anything?)
+  * type: ['deck', 'row', 'fan'] => this determines how the group looks on the table
+  * position: {x: number, y: number} => determines where on the table the group is located
+  * objects.allowed: [allowed types] => array of allowed object classes
+  * objects.default: [object names] => array of object names that should start in the group
+  * objects.current: [objectIds] => array of objectIds that represents the current objects in the group
+  *
+  * Methods:
+  *
+  * populateWithDefaults() => repopulates all the groups with the default objects
+  * addObjectByName(groupId, objectName) => adds an object to a group
+  * removeObjectByName(groupId, objectName) => removes an object from a group, if it exists
+  * updatePosition(groupId, position) => updates the position of a group
+  *
   */
 
 Groups = new Mongo.Collection('groups');
@@ -10,12 +26,23 @@ Groups = new Mongo.Collection('groups');
 Groups.populateWithDefaults = function () {
   let groups = this.find().forEach(function (group) {
     _.each(group.objects.default, function (objectName) {
-      Groups.pushObjectByName(group._id, objectName);
+      Groups.addObjectByName(group._id, objectName);
     });
   });
 };
 
-Groups.pushObjectByName = function (groupId, objectName) {
+Groups.removeObjectByName = function (groupId, objectName) {
+  let object = GameObjects.findOne({name: objectName});
+  Groups.update({
+    _id: groupId
+  }, {
+    $pullAll: {
+      'objects.current': [object._id]
+    }
+  });
+}
+
+Groups.addObjectByName = function (groupId, objectName) {
   let object = GameObjects.findOne({name: objectName});
   Groups.upsert({
     _id: groupId
@@ -25,6 +52,16 @@ Groups.pushObjectByName = function (groupId, objectName) {
     }
   });
 };
+
+Groups.updatePosition = function (groupId, position) {
+  Groups.update({
+    _id: groupId
+  }, {
+    $set: {
+      position: position
+    }
+  });
+}
 
 Groups.shuffle = function () {
 

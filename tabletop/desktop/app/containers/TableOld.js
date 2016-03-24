@@ -20,6 +20,7 @@ class Table extends Component {
   componentDidMount() {
     const that = this;
     const ddpClient = new DDPClient({url: 'ws://localhost:4000/websocket'});
+    this.ddpClient = ddpClient;
 
     ddpClient.connect((err, wasReconnected) => {
       if (err) {
@@ -65,18 +66,16 @@ class Table extends Component {
     return Object.keys(this.state.groups).map(function (groupId, index) {
       const group = this.state.groups[groupId];
       return <Group
-        key={index}
-        objects={this.state.gameObjects}
-        objectIds={group.objects.current} />
+        key={group._id}
+        ddpClient={this.ddpClient}
+        group={group}
+        objects={this.state.gameObjects} />
     }, this);
   }
 
   render() {
     return (
-      <div>
-        <div className={styles.container}>
-          {this.renderGroups()}
-        </div>
+      <div className="table">
       </div>
     );
   }

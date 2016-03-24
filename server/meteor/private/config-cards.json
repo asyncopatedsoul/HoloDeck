@@ -3,6 +3,10 @@
     {
       "name":"Main Deck",
       "type":"deck",
+      "position": {
+        "x": 100,
+        "y": 100
+      },
       "objects":{
         "allowed":["card"],
         "default":[
@@ -12,8 +16,12 @@
       }
     },
     {
-      "name": "Shared Cards",
-      "type": "cardPile",
+      "name": "Flop",
+      "type": "row",
+      "position": {
+        "x": 200,
+        "y": 200
+      },
       "objects": {
         "allowed": ["card"],
         "default": [],
@@ -23,6 +31,10 @@
     {
       "name": "Player 1",
       "type": "hand",
+      "position": {
+        "x": 500,
+        "y": 500
+      },
       "objects": {
         "allowed": ["card"],
         "default": [],

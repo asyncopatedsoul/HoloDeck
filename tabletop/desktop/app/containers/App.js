@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import css from '../scss/containers/App.scss';
 
 class App extends Component {
   static propTypes = {
@@ -7,7 +8,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="app-container">
         {this.props.children}
       </div>
     );
