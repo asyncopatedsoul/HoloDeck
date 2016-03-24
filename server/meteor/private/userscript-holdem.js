@@ -42,13 +42,59 @@ function methods(scope, player, object) {
   // Object methods
 }
 
-function setup( config ) {
+function setup( scope, config ) {
 
     // 1 deck - 52 playing cards
+    
 
+    PlayTable.locations({
     // 1 deck position
+      "deck": {
+        position: function(table) {
+          return {x:100,y:100};
+        }
+      },
+
+      "discard": {
+        position: function(table) {
+          return {x:100,y:100};
+        }
+      },
 
     // 5 card positions
+      "flop1": {
+        position: function(table) {
+          return {x:100,y:100};
+        }
+      },
+
+      "flop2": {
+        position: function(table) {
+          return {x:100,y:100};
+        }
+      },
+
+      "flop3": {
+        position: function(table) {
+          return {x:100,y:100};
+        }
+      },
+
+      "turn": {
+        position: function(table) {
+          return {x:100,y:100};
+        }
+      },
+
+      "river": {
+        position: function(table) {
+          return {x:100,y:100};
+        }
+      }
+
+    })
+
+
 
     // per player: 1 dock position
 
